@@ -13,6 +13,9 @@ export default function ProductPage({
   const currentProduct = data.find(
     (product) => product.id === params.productId
   );
+
+  const heightFrom = currentProduct?.height_from || "1";
+  const heightTo = currentProduct?.height_to || "1";
   return (
     <div
       className={cn(
@@ -54,11 +57,9 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? `${currentProduct?.height_from ?? "N/A"} to ${
-                  currentProduct?.height_to ?? "N/A"
-                } meters`
-              : `يتراوح من ${currentProduct?.height_from ?? "N/A"} إلى ${
-                  currentProduct?.height_to ?? "N/A"
+              ? `${heightFrom} to ${heightTo} meters`
+              : `يتراوح من ${currentProduct?.height_from || "1"} إلى ${
+                  currentProduct?.height_to || "1"
                 } أمتار`}
           </p>
         </div>
