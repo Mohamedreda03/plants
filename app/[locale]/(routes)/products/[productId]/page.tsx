@@ -10,12 +10,17 @@ export default function ProductPage({
   params: { locale: string; productId: string };
 }) {
   const t = useTranslations("ProductPage");
+
+  // العثور على المنتج بناءً على معرف المنتج
   const currentProduct = data.find(
     (product) => product.id === params.productId
   );
 
-  const heightFrom = currentProduct?.height_from || "1";
-  const heightTo = currentProduct?.height_to || "1";
+  // التحقق من وجود المنتج
+  if (!currentProduct) {
+    return <p></p>; // رسالة خطأ إذا لم يتم العثور على المنتج
+  }
+
   return (
     <div
       className={cn(
@@ -32,8 +37,8 @@ export default function ProductPage({
           </span>
           <span className="border-b-2 border-green-500">
             {params.locale === "en"
-              ? currentProduct?.en_name!
-              : currentProduct?.ar_name!}
+              ? currentProduct.en_name
+              : currentProduct.ar_name}
           </span>
         </h1>
         <div>
@@ -44,7 +49,7 @@ export default function ProductPage({
             <span>
               <ChevronLeft size={25} className="text-green-500" />
             </span>
-            {currentProduct?.la_name}
+            {currentProduct.la_name}
           </p>
         </div>
 
@@ -57,12 +62,11 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? `${heightFrom} to ${heightTo} meters`
-              : `يتراوح من ${currentProduct?.height_from || "1"} إلى ${
-                  currentProduct?.height_to || "1"
-                } أمتار`}
+              ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
+              : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
           </p>
         </div>
+
         <div>
           <h4 className="border-b-2 border-green-500 w-fit mb-2">
             {t("leg_width")}
@@ -72,10 +76,11 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? `${currentProduct?.height_from} to ${currentProduct?.height_to} cm`
-              : `يتراوح من ${currentProduct?.height_from} إلى ${currentProduct?.height_to} سم`}
+              ? `${currentProduct.height_from} to ${currentProduct.height_to} cm`
+              : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} سم`}
           </p>
         </div>
+
         <div>
           <h4 className="border-b-2 border-green-500 w-fit mb-2">
             {t("suitable_environment")}
@@ -85,13 +90,19 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? currentProduct?.en_suitable_environment
-              : currentProduct?.ar_suitable_environment}
+              ? currentProduct.en_suitable_environment
+              : currentProduct.ar_suitable_environment}
           </p>
         </div>
       </div>
+
       <div className="flex-1">
-        <ProductImages images={currentProduct?.images!} />
+        {/* التأكد من وجود الصور قبل تمريرها */}
+        {currentProduct.images ? (
+          <ProductImages images={currentProduct.images} />
+        ) : (
+          <p></p>
+        )}
       </div>
     </div>
   );
