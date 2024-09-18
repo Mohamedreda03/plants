@@ -13,7 +13,7 @@ export default function ProductImages({ images }: { images: string[] }) {
       modules={[Navigation, Autoplay]}
       autoplay={{ delay: 5000 }}
       navigation={true}
-      className="h-[700px] max-w-[600px] w-full relative rounded-lg"
+      className="lg:h-[650px] h-[500px] lg:max-w-[600px] sm:max-w-[400px] max-w-[600px] w-full relative rounded-lg"
     >
       {images.map((image, index) => (
         <SwiperSlide key={index} className="relative">

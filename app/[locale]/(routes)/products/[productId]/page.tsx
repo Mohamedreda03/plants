@@ -16,21 +16,21 @@ export default function ProductPage({
   return (
     <div
       className={cn(
-        "flex px-5 py-10 max-w-screen-xl mx-auto flex-col md:flex-row",
+        "flex px-5 py-10 max-w-screen-xl mx-auto flex-col-reverse md:flex-row",
         {
           "md:flex-row-reverse": params.locale === "en",
         }
       )}
     >
-      <div className="md:flex-1 flex flex-col gap-5 text-xl">
+      <div className="md:flex-1 flex flex-col gap-5 text-xl w-full">
         <h1 className="text-4xl font-bold w-fit mt-8 flex items-center gap-3">
           <span>
             <Sprout size={30} className="text-green-500" />
           </span>
           <span className="border-b-2 border-green-500">
             {params.locale === "en"
-              ? currentProduct?.en_name
-              : currentProduct?.ar_name}
+              ? currentProduct?.en_name!
+              : currentProduct?.ar_name!}
           </span>
         </h1>
         <div>
@@ -54,8 +54,8 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? `${currentProduct?.height_from} to ${currentProduct?.height_to} meters`
-              : `يتراوح من ${currentProduct?.height_from} إلى ${currentProduct?.height_to} أمتار`}
+              ? `${currentProduct?.height_from!} to ${currentProduct?.height_to!} meters`
+              : `يتراوح من ${currentProduct?.height_from!} إلى ${currentProduct?.height_to!} أمتار`}
           </p>
         </div>
         <div>
