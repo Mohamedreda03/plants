@@ -1,8 +1,7 @@
 import ProductImages from "@/components/ProductImages";
-import { PRODUCTS_TYPE } from "@/lib/data";
 import data from "@/lib/data_products.json";
 import { cn } from "@/lib/utils";
-import { ChevronLeft, Leaf, Sprout } from "lucide-react";
+import { ChevronLeft, Sprout } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function ProductPage({
