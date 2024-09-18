@@ -54,8 +54,12 @@ export default function ProductPage({
               <ChevronLeft size={25} className="text-green-500" />
             </span>
             {params.locale === "en"
-              ? `${currentProduct?.height_from!} to ${currentProduct?.height_to!} meters`
-              : `يتراوح من ${currentProduct?.height_from!} إلى ${currentProduct?.height_to!} أمتار`}
+              ? `${currentProduct?.height_from ?? "N/A"} to ${
+                  currentProduct?.height_to ?? "N/A"
+                } meters`
+              : `يتراوح من ${currentProduct?.height_from ?? "N/A"} إلى ${
+                  currentProduct?.height_to ?? "N/A"
+                } أمتار`}
           </p>
         </div>
         <div>
