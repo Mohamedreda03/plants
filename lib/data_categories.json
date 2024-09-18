@@ -1,0 +1,17 @@
+[
+  {
+    "id": "1",
+    "ar_name": "شجيرات",
+    "en_name": "Shrubs"
+  },
+  {
+    "id": "2",
+    "ar_name": "أشجار",
+    "en_name": "Trees"
+  },
+  {
+    "id": "3",
+    "ar_name": "نباتات داخلية",
+    "en_name": "Indoor Plants"
+  }
+]

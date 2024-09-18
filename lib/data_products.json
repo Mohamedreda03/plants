@@ -1,0 +1,44 @@
+[
+  {
+    "id": "1",
+    "ar_name": "باهونيا",
+    "en_name": "Bauhinia",
+    "la_name": "Bauhinia spp",
+    "height_from": "3",
+    "height_to": "8",
+    "width_from": "15",
+    "width_to": "30",
+    "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
+    "en_suitable_environment": "Well-drained soil, warm climate, watering every week",
+    "category": "Shrubs",
+    "images": ["/products/1.jpg"]
+  },
+  {
+    "id": "2",
+    "ar_name": "بوانسيانا",
+    "en_name": "Royal Poinciana",
+    "la_name": "Delonix regia",
+    "height_from": "5",
+    "height_to": "12",
+    "width_from": "30",
+    "width_to": "60",
+    "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
+    "en_suitable_environment": "Well-drained soil, warm climate, watering every week",
+    "category": "Trees",
+    "images": ["/products/2.jpg", "/products/2_2.jpg"]
+  },
+  {
+    "id": "3",
+    "ar_name": "بكابوديوم",
+    "en_name": "Pachypodium",
+    "la_name": "Pachypodium spp",
+    "height_from": "5",
+    "height_to": "12",
+    "width_from": "30",
+    "width_to": "60",
+    "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوعين",
+    "en_suitable_environment": "well-drained soil, warm climate, watering every two weeks",
+    "category": "Indoor Plants",
+    "images": ["/products/3_1.jpg", "/products/3_2.jpg", "/products/3_3.jpg"]
+  }
+]

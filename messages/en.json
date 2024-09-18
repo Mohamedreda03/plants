@@ -1,0 +1,28 @@
+{
+  "Navbar": {
+    "home": "Home",
+    "products": "Products",
+    "about": "About",
+    "branches": "Branches",
+    "contact": "Contact us"
+  },
+  "Hero": {
+    "title": "Welcome to Flower Green",
+    "subtitle": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "button": "See our products"
+  },
+  "ProductsGroup": {
+    "title_1": "Favorite Products",
+    "see_all": "See all"
+  },
+  "HomePage": {
+    "title": "Hello world!",
+    "about": "Go to the about page"
+  },
+  "ProductPage": {
+    "latin_name": "Latin Name",
+    "suitable_environment": "Suitable Environment",
+    "leg_height": "Leg Length",
+    "leg_width": "Leg Width"
+  }
+}
