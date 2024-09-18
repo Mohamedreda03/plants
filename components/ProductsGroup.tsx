@@ -20,12 +20,10 @@ export default function ProductsGroup({
   locale,
 }: {
   title: string;
-  products: any[];
+  products: PRODUCTS_TYPE[];
   locale: "en" | "ar";
 }) {
   const t = useTranslations("ProductsGroup");
-
-  if (!products.length) return null;
 
   return (
     <div className="flex flex-col gap-3 py-10 max-w-screen-xl mx-auto px-5">
