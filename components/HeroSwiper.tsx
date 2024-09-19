@@ -28,9 +28,11 @@ export default function HeroSwiper() {
           fill
           className="object-cover blur-[2px]"
         />
-        <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white">
-          <h2 className="text-5xl font-bold">{t("title")}</h2>
-          <p className="text-white/80 mt-5 text-2xl max-w-screen-md mx-auto text-center">
+        <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
+          <h2 className="md:text-5xl text-4xl font-bold text-center">
+            {t("title")}
+          </h2>
+          <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
             {t("subtitle")}
           </p>
           <Button
@@ -48,9 +50,11 @@ export default function HeroSwiper() {
           fill
           className="object-cover blur-[2px]"
         />
-        <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white">
-          <h2 className="text-5xl font-bold">{t("title")}</h2>
-          <p className="text-white/80 mt-5 text-2xl max-w-screen-md mx-auto text-center">
+        <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
+          <h2 className="md:text-5xl text-4xl font-bold text-center">
+            {t("title")}
+          </h2>
+          <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
             {t("subtitle")}
           </p>
           <Button
