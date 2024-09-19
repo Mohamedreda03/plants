@@ -24,5 +24,13 @@
     "suitable_environment": "Suitable Environment",
     "leg_height": "Leg Length",
     "leg_width": "Leg Width"
+  },
+  "About": {
+    "title": "About us",
+    "content": "Flower Green Agricultural Company was launched from Menoufia Governorate to achieve global status and provide integrated agricultural services starting from its wide and diverse production of plants. Our commitment to showcasing and improving the beautiful side of nature is one of our most important principles. We are also committed to providing high-quality services to our customers, and we continue to work on the same approach that always makes us among the elite in this field. Our work team consists of a group of qualified, expert and professional workers, who are keen to complete the work in the best possible way to reach the best results. Our values ​​are based on credibility, excellence, and accuracy in performance and implementation. Company branches."
+  },
+  "Branches": {
+    "title": "Branches",
+    "content": "The company's headquarters is located in Ezbet Zayed and it has a branch in Khatatba. In our desire to expand our business inside and outside Egypt, we are still working on opening new channels and other branches around the world in support of our future plans and to keep pace with the continuous development."
   }
 }

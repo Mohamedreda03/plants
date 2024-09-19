@@ -2,6 +2,8 @@ import { useTranslations } from "next-intl";
 import HeroSwiper from "@/components/HeroSwiper";
 import ProductsGroup from "@/components/ProductsGroup";
 import data from "@/lib/data_products.json";
+import About from "@/components/About";
+import Branches from "@/components/Branches";
 
 export default function HomePage({
   params,
@@ -18,6 +20,8 @@ export default function HomePage({
         products={data}
         locale={params.locale}
       />
+      <About />
+      <Branches />
     </div>
   );
 }

@@ -28,13 +28,16 @@ export default function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#about" className="hover:text-green-400 transition-all">
+            <Link
+              href="/#about"
+              className="hover:text-green-400 transition-all"
+            >
               {t("about")}
             </Link>
           </li>
           <li>
             <Link
-              href="#branches"
+              href="/#branches"
               className="hover:text-green-400 transition-all"
             >
               {t("branches")}
@@ -42,7 +45,7 @@ export default function Navbar() {
           </li>
           <li>
             <Link
-              href="#contact"
+              href="/#contact"
               className="hover:text-green-400 transition-all"
             >
               {t("contact")}

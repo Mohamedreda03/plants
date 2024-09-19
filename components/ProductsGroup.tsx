@@ -3,7 +3,6 @@
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
 
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
