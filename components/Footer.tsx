@@ -17,7 +17,7 @@ export default function Footer() {
           </Link>
         </div>
         <div className="footer_links">
-          <ul className="flex items-center justify-around">
+          <ul className="flex items-center justify-around md:flex-row flex-col gap-4">
             <li>
               <a
                 href="https://www.facebook.com/people/%D9%81%D9%84%D8%A7%D9%88%D8%B1-%D8%AC%D8%B1%D9%8A%D9%86-%D8%A7%D8%B3%D8%AA%D9%8A%D8%B1%D8%A7%D8%AF-%D9%88%D8%AA%D8%B5%D8%AF%D9%8A%D8%B1-%D9%86%D8%A8%D8%A7%D8%AA%D8%A7%D8%AA-%D8%A7%D9%84%D8%B2%D9%8A%D9%86%D9%87/100063727696675/?mibextid=LQQJ4d"
