@@ -5,9 +5,7 @@ import React from "react";
 export default function layout({ children }: { children: React.ReactNode }) {
   return (
     <div>
-      <div className="z-[2000]">
-        <Navbar />
-      </div>
+      <Navbar />
       <main>{children}</main>
       <Footer />
     </div>

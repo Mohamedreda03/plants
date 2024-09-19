@@ -55,7 +55,9 @@ export default function Navbar() {
         <div className="hidden md:block">
           <LangButton />
         </div>
-        <MobileMenu />
+        <div className="z-[2000]">
+          <MobileMenu />
+        </div>
       </div>
     </header>
   );
