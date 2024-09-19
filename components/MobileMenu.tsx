@@ -18,7 +18,7 @@ export default function MobileMenu() {
       <SheetTrigger asChild>
         <Menu size={35} className="cursor-pointer md:hidden" />
       </SheetTrigger>
-      <SheetContent className="bg-white flex flex-col gap-5 justify-center pb-40 text-black text-3xl text-center z-[2000]">
+      <SheetContent className="bg-white flex flex-col gap-5 justify-center pb-40 text-black text-3xl text-center">
         <SheetClose asChild>
           <Link href="/">{t("home")}</Link>
         </SheetClose>
