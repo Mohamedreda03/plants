@@ -26,10 +26,13 @@ export default function MobileMenu() {
           <Link href="/products">{t("products")}</Link>
         </SheetClose>
         <SheetClose asChild>
-          <Link href="#about">{t("about")}</Link>
+          <Link href="/#about">{t("about")}</Link>
         </SheetClose>
         <SheetClose asChild>
-          <Link href="#branches">{t("branches")}</Link>
+          <Link href="/#branches">{t("branches")}</Link>
+        </SheetClose>
+        <SheetClose asChild>
+          <Link href="/#contact">{t("contact")}</Link>
         </SheetClose>
         <SheetClose asChild className="flex items-center justify-center mt-5">
           <LangButton />
