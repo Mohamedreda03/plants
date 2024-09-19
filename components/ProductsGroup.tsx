@@ -29,7 +29,7 @@ export default function ProductsGroup({
       <div className="flex items-center justify-between">
         <h2 className="text-xl font-bold">{title}</h2>
         <Link
-          href="#"
+          href="/products"
           className="text-sm font-medium text-blue-600 hover:text-blue-500"
         >
           {t("see_all")}
