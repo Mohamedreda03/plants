@@ -61,9 +61,19 @@ export default function ProductPage({
             <span>
               <ChevronLeft size={25} className="text-green-500" />
             </span>
-            {params.locale === "en"
-              ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
-              : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
+            {currentProduct.height_from.length === 0 ? (
+              <>
+                {params.locale === "en"
+                  ? `Varies by model`
+                  : "يختلف حسب النموذج"}
+              </>
+            ) : (
+              <>
+                {params.locale === "en"
+                  ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
+                  : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
+              </>
+            )}
           </p>
         </div>
 
@@ -75,9 +85,19 @@ export default function ProductPage({
             <span>
               <ChevronLeft size={25} className="text-green-500" />
             </span>
-            {params.locale === "en"
-              ? `${currentProduct.height_from} to ${currentProduct.height_to} cm`
-              : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} سم`}
+            {currentProduct.width_from.length === 0 ? (
+              <>
+                {params.locale === "en"
+                  ? `Varies by model`
+                  : "يختلف حسب النموذج"}
+              </>
+            ) : (
+              <>
+                {params.locale === "en"
+                  ? `${currentProduct.height_from} to ${currentProduct.height_to} cm`
+                  : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} سم`}
+              </>
+            )}
           </p>
         </div>
 

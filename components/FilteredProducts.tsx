@@ -23,16 +23,16 @@ export default function FilteredProducts({
   const [search, setSearch] = useState<string>("");
   const [filteredProducts, setFilteredProducts] =
     useState<PRODUCTS_TYPE[]>(products);
-  const [category, setCategory] = useState<string>("");
+  // const [category, setCategory] = useState<string>("");
 
   useEffect(() => {
     // نبدأ بمصفوفة المنتجات الأصلية
     let filtered = [...products];
 
     // تصفية حسب الفئة
-    if (category) {
-      filtered = filtered.filter((product) => product.category === category);
-    }
+    // if (category) {
+    //   filtered = filtered.filter((product) => product.category === category);
+    // }
 
     // تصفية حسب البحث
     if (search) {
@@ -45,15 +45,15 @@ export default function FilteredProducts({
 
     // تحديث قائمة المنتجات المصفاة
     setFilteredProducts(filtered);
-  }, [search, category, products, locale]); // تعتمد على search وcategory وproducts
+  }, [search, products, locale]); // تعتمد على search وcategory وproducts
 
   const searchHandler = (e: React.ChangeEvent<HTMLInputElement>) => {
     setSearch(e.target.value);
   };
 
-  const handleFilter = (value: string) => {
-    setCategory(value);
-  };
+  // const handleFilter = (value: string) => {
+  //   setCategory(value);
+  // };
 
   return (
     <div className="flex flex-col gap-3 py-10">
@@ -63,9 +63,9 @@ export default function FilteredProducts({
           value={search}
           onChange={searchHandler}
           placeholder={locale === "en" ? "Search" : "ابحث"}
-          className="w-full p-2 border border-gray-300 rounded-md outline-none"
+          className="w-full p-2 px-4 border border-gray-300 rounded-md outline-none"
         />
-        <div>
+        {/* <div>
           <Select onValueChange={handleFilter}>
             <SelectTrigger className="w-[180px]">
               <SelectValue
@@ -82,7 +82,7 @@ export default function FilteredProducts({
               </SelectGroup>
             </SelectContent>
           </Select>
-        </div>
+        </div> */}
       </div>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-5 mt-8">
         {filteredProducts.map((product) => (
