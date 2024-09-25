@@ -1,17 +1,17 @@
 "use client";
 
-import {
-  Select,
-  SelectContent,
-  SelectGroup,
-  SelectItem,
-  SelectTrigger,
-  SelectValue,
-} from "@/components/ui/select";
+// import {
+//   Select,
+//   SelectContent,
+//   SelectGroup,
+//   SelectItem,
+//   SelectTrigger,
+//   SelectValue,
+// } from "@/components/ui/select";
 import { useEffect, useState } from "react";
 import { PRODUCTS_TYPE } from "../lib/data";
 import ProductCard from "./ProductCard";
-import categories from "../lib/data_categories.json";
+// import categories from "../lib/data_categories.json";
 
 export default function FilteredProducts({
   products,
