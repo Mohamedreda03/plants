@@ -9,8 +9,8 @@
 //   SelectValue,
 // } from "@/components/ui/select";
 import { useEffect, useState } from "react";
-import { PRODUCTS_TYPE } from "../lib/data";
 import ProductCard from "./ProductCard";
+import { PRODUCTS_TYPE } from "@/lib/data";
 // import categories from "../lib/data_categories.json";
 
 export default function FilteredProducts({

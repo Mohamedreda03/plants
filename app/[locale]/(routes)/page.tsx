@@ -4,7 +4,7 @@ import ProductsGroup from "@/components/ProductsGroup";
 import data from "@/lib/data_products.json";
 import About from "@/components/About";
 import Branches from "@/components/Branches";
-import type { PRODUCTS_TYPE } from "@/lib/data";
+import { PRODUCTS_TYPE } from "@/lib/data";
 
 export default function HomePage({
   params,
