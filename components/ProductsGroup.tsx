@@ -11,7 +11,7 @@ import "swiper/css/navigation";
 
 import ProductCard from "./ProductCard";
 import { Navigation } from "swiper/modules";
-import { PRODUCTS_TYPE } from "../lib/data";
+import { PRODUCTS_TYPE } from "@/lib/data";
 
 export default function ProductsGroup({
   title,
@@ -19,7 +19,7 @@ export default function ProductsGroup({
   locale,
 }: {
   title: string;
-  products: PRODUCTS_TYPE[];
+  products: any[];
   locale: "en" | "ar";
 }) {
   const t = useTranslations("ProductsGroup");
