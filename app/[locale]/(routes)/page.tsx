@@ -4,6 +4,7 @@ import ProductsGroup from "@/components/ProductsGroup";
 import data from "@/lib/data_products.json";
 import About from "@/components/About";
 import Branches from "@/components/Branches";
+import type { PRODUCTS_TYPE } from "@/lib/data";
 
 export default function HomePage({
   params,
@@ -17,7 +18,7 @@ export default function HomePage({
       <HeroSwiper />
       <ProductsGroup
         title={t("title_1")}
-        products={data}
+        products={data as PRODUCTS_TYPE[]}
         locale={params.locale}
       />
       <About />

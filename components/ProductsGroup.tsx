@@ -2,6 +2,7 @@
 
 import { Link } from "@/i18n/routing";
 import { useTranslations } from "next-intl";
+import type { PRODUCTS_TYPE } from "@/lib/data";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 
@@ -11,7 +12,6 @@ import "swiper/css/navigation";
 
 import ProductCard from "./ProductCard";
 import { Navigation } from "swiper/modules";
-import { PRODUCTS_TYPE } from "@/lib/data";
 
 export default function ProductsGroup({
   title,
@@ -19,7 +19,7 @@ export default function ProductsGroup({
   locale,
 }: {
   title: string;
-  products: any[];
+  products: PRODUCTS_TYPE[];
   locale: "en" | "ar";
 }) {
   const t = useTranslations("ProductsGroup");
