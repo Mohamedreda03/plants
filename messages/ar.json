@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "home": "الرئيسية",
-    "products": "المنتجات",
+    "products": "النباتات",
     "about": "عنا",
     "branches": "الفروع",
     "contact": "تواصل معنا"
@@ -12,7 +12,7 @@
     "button": "شاهد منتجاتنا"
   },
   "ProductsGroup": {
-    "title_1": "المنتجات",
+    "title_1": "النباتات",
     "see_all": "شاهد الكل"
   },
   "HomePage": {

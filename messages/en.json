@@ -1,7 +1,7 @@
 {
   "Navbar": {
     "home": "Home",
-    "products": "Products",
+    "products": "Plants",
     "about": "About",
     "branches": "Branches",
     "contact": "Contact us"
@@ -12,7 +12,7 @@
     "button": "See our products"
   },
   "ProductsGroup": {
-    "title_1": "Favorite Products",
+    "title_1": "Plants",
     "see_all": "See all"
   },
   "HomePage": {

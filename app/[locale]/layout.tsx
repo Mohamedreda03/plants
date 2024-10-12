@@ -1,19 +1,20 @@
 import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
-import {
-  // Almarai,
-  Alexandria,
-} from "next/font/google";
+import { Almarai } from "next/font/google";
 import "./globals.css";
 
-// const almarai = Almarai({
-//   subsets: ["arabic"],
-//   weight: ["300", "400", "700", "800"],
-// });
-const alexandria = Alexandria({
+const almarai = Almarai({
   subsets: ["arabic"],
   weight: ["300", "400", "700", "800"],
 });
+// const alexandria = Alexandria({
+//   subsets: ["arabic"],
+//   weight: ["300", "400", "700", "800"],
+// });
+// const amiri = Amiri({
+//   subsets: ["arabic"],
+//   weight: ["400", "700"],
+// });
 
 export default async function LocaleLayout({
   children,
@@ -26,7 +27,8 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
-      <body className={alexandria.className}>
+      <body className={almarai
+        .className}>
         <NextIntlClientProvider messages={messages}>
           {children}
         </NextIntlClientProvider>
