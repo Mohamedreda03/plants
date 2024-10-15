@@ -23,10 +23,10 @@ export default function HeroSwiper() {
     >
       <SwiperSlide className="relative">
         <Image
-          src="/slides/slide-image-01.webp"
+          src="/slides/slide_1.webp"
           alt="Hero"
           fill
-          className="object-cover blur-[2px]"
+          className="object-cover blur-[1px]"
         />
         <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
           <h2 className="md:text-5xl text-4xl font-bold text-center">
@@ -45,10 +45,10 @@ export default function HeroSwiper() {
       </SwiperSlide>
       <SwiperSlide className="relative">
         <Image
-          src="/slides/slide-image-02.webp"
+          src="/slides/slide_2.webp"
           alt="Hero"
           fill
-          className="object-cover blur-[2px]"
+          className="object-cover blur-[1px]"
         />
         <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
           <h2 className="md:text-5xl text-4xl font-bold text-center">
