@@ -41,79 +41,87 @@ export default function ProductPage({
               : currentProduct.ar_name}
           </span>
         </h1>
-        <div>
-          <h4 className="border-b-2 border-green-500 w-fit mb-2">
-            {t("latin_name")}
-          </h4>
-          <p className="flex items-center gap-1">
-            <span>
-              <ChevronLeft size={25} className="text-green-500" />
-            </span>
-            {currentProduct.la_name}
-          </p>
-        </div>
+        {currentProduct.la_name.length > 0 && (
+          <div>
+            <h4 className="border-b-2 border-green-500 w-fit mb-2">
+              {t("latin_name")}
+            </h4>
+            <p className="flex items-center gap-1">
+              <span>
+                <ChevronLeft size={25} className="text-green-500" />
+              </span>
+              {currentProduct.la_name}
+            </p>
+          </div>
+        )}
 
-        <div>
-          <h4 className="border-b-2 border-green-500 w-fit mb-2">
-            {t("leg_height")}
-          </h4>
-          <p className="flex items-center gap-1">
-            <span>
-              <ChevronLeft size={25} className="text-green-500" />
-            </span>
-            {currentProduct.height_from.length === 0 ? (
-              <>
-                {params.locale === "en"
-                  ? `Varies by model`
-                  : "يختلف حسب النموذج"}
-              </>
-            ) : (
-              <>
-                {params.locale === "en"
-                  ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
-                  : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
-              </>
-            )}
-          </p>
-        </div>
+        {currentProduct.height_from.length > 0 && (
+          <div>
+            <h4 className="border-b-2 border-green-500 w-fit mb-2">
+              {t("leg_height")}
+            </h4>
+            <p className="flex items-center gap-1">
+              <span>
+                <ChevronLeft size={25} className="text-green-500" />
+              </span>
+              {currentProduct.height_from.length === 0 ? (
+                <>
+                  {params.locale === "en"
+                    ? `Varies by model`
+                    : "يختلف حسب النموذج"}
+                </>
+              ) : (
+                <>
+                  {params.locale === "en"
+                    ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
+                    : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
+                </>
+              )}
+            </p>
+          </div>
+        )}
 
-        <div>
-          <h4 className="border-b-2 border-green-500 w-fit mb-2">
-            {t("leg_width")}
-          </h4>
-          <p className="flex items-center gap-1">
-            <span>
-              <ChevronLeft size={25} className="text-green-500" />
-            </span>
-            {currentProduct.width_from.length === 0 ? (
-              <>
-                {params.locale === "en"
-                  ? `Varies by model`
-                  : "يختلف حسب النموذج"}
-              </>
-            ) : (
-              <>
-                {params.locale === "en"
-                  ? `${currentProduct.height_from} to ${currentProduct.height_to} cm`
-                  : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} سم`}
-              </>
-            )}
-          </p>
-        </div>
+        {currentProduct.width_from.length > 0 && (
+          <div>
+            <h4 className="border-b-2 border-green-500 w-fit mb-2">
+              {t("leg_width")}
+            </h4>
+            <p className="flex items-center gap-1">
+              <span>
+                <ChevronLeft size={25} className="text-green-500" />
+              </span>
+              {currentProduct.width_from.length === 0 ? (
+                <>
+                  {params.locale === "en"
+                    ? `Varies by model`
+                    : "يختلف حسب النموذج"}
+                </>
+              ) : (
+                <>
+                  {params.locale === "en"
+                    ? `${currentProduct.height_from} to ${currentProduct.height_to} cm`
+                    : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} سم`}
+                </>
+              )}
+            </p>
+          </div>
+        )}
 
-        <div>
-          <h4 className="border-b-2 border-green-500 w-fit mb-2">
-            {t("suitable_environment")}
-          </h4>
-          <p className="flex items-center gap-1">
-            <span>
-              <ChevronLeft size={25} className="text-green-500" />
-            </span>
-            {params.locale === "en"
-              ? currentProduct.en_suitable_environment
-              : currentProduct.ar_suitable_environment}
-          </p>
-        </div>
+        {currentProduct.en_suitable_environment?.length! > 0 && (
+          <div>
+            <h4 className="border-b-2 border-green-500 w-fit mb-2">
+              {t("suitable_environment")}
+            </h4>
+            <p className="flex items-center gap-1">
+              <span>
+                <ChevronLeft size={25} className="text-green-500" />
+              </span>
+              {params.locale === "en"
+                ? currentProduct.en_suitable_environment
+                : currentProduct.ar_suitable_environment}
+            </p>
+          </div>
+        )}
       </div>
 
       <div className="flex-1">
