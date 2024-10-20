@@ -12,7 +12,7 @@ export default function ProductPage({
   const t = useTranslations("ProductPage");
 
   // العثور على المنتج بناءً على معرف المنتج
-  const currentProduct = data.find(
+  const currentProduct: any = data.find(
     (product) => product.id === params.productId
   );
 
