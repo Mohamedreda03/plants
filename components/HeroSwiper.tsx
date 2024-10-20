@@ -29,17 +29,17 @@ export default function HeroSwiper() {
           className="object-cover blur-[1px]"
         />
         <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
-          <h2 className="md:text-5xl text-4xl font-bold text-center">
-            {t("title")}
+          <h2 className="md:text-5xl text-4xl font-bold text-center mb-5">
+            {t("title1")}
           </h2>
-          <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
-            {t("subtitle")}
-          </p>
+          {/* <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
+            {t("subtitle2")}
+          </p> */}
           <Button
             asChild
             className="mt-5 bg-green-500 hover:bg-green-400 text-white text-xl h-12"
           >
-            <Link href="/products">{t("button")}</Link>
+            <Link href="/products">{t("button1")}</Link>
           </Button>
         </div>
       </SwiperSlide>
@@ -51,17 +51,17 @@ export default function HeroSwiper() {
           className="object-cover blur-[1px]"
         />
         <div className="absolute inset-0 w-full h-full bg-black/20 flex flex-col items-center justify-center pb-16 text-white px-5">
-          <h2 className="md:text-5xl text-4xl font-bold text-center">
-            {t("title")}
+          <h2 className="md:text-5xl text-4xl font-bold text-center mb-5">
+            {t("title2")}
           </h2>
-          <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
-            {t("subtitle")}
-          </p>
+          {/* <p className="text-white/80 mt-5 md:text-xl text-lg max-w-screen-md mx-auto text-center">
+            {t("subtitle2")}
+          </p> */}
           <Button
             asChild
             className="mt-5 bg-green-500 hover:bg-green-400 text-white text-xl h-12"
           >
-            <Link href="/products">{t("button")}</Link>
+            <Link href="#branches">{t("button2")}</Link>
           </Button>
         </div>
       </SwiperSlide>

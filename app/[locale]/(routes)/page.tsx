@@ -16,12 +16,12 @@ export default function HomePage({
   return (
     <div>
       <HeroSwiper />
+      <About />
       <ProductsGroup
         title={t("title_1")}
         products={data as PRODUCTS_TYPE[]}
         locale={params.locale}
       />
-      <About />
       <Branches />
     </div>
   );
