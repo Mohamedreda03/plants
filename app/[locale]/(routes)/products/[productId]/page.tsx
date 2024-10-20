@@ -37,8 +37,8 @@ export default function ProductPage({
           </span>
           <span className="border-b-2 border-green-500">
             {params.locale === "en"
-              ? currentProduct.en_name
-              : currentProduct.ar_name}
+              ? currentProduct.en_name!
+              : currentProduct.ar_name!}
           </span>
         </h1>
         {currentProduct.la_name.length > 0 && (
@@ -50,7 +50,7 @@ export default function ProductPage({
               <span>
                 <ChevronLeft size={25} className="text-green-500" />
               </span>
-              {currentProduct.la_name}
+              {currentProduct.la_name!}
             </p>
           </div>
         )}
