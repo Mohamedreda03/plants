@@ -50,41 +50,36 @@ export default function ProductPage({
               <span>
                 <ChevronLeft size={25} className="text-green-500" />
               </span>
-              {currentProduct.la_name!}
+              {currentProduct.la_name}
             </p>
           </div>
         )}
 
-        {currentProduct?.height_from &&
-          currentProduct.height_from.length > 0 && (
-            <div>
-              <h4 className="border-b-2 border-green-500 w-fit mb-2">
-                {t("leg_height")}
-              </h4>
-              <p className="flex items-center gap-1">
-                <span>
-                  <ChevronLeft size={25} className="text-green-500" />
-                </span>
-                {currentProduct.height_from.length === 0 ? (
-                  <>
-                    {params.locale === "en"
-                      ? `Varies by model`
-                      : "يختلف حسب النموذج"}
-                  </>
-                ) : (
-                  <>
-                    {params.locale === "en"
-                      ? `${currentProduct.height_from} to ${
-                          currentProduct?.height_to ?? "N/A"
-                        } meters`
-                      : `يتراوح من ${currentProduct.height_from} إلى ${
-                          currentProduct?.height_to ?? "N/A"
-                        } أمتار`}
-                  </>
-                )}
-              </p>
-            </div>
-          )}
+        {currentProduct.height_from.length > 0 && (
+          <div>
+            <h4 className="border-b-2 border-green-500 w-fit mb-2">
+              {t("leg_height")}
+            </h4>
+            <p className="flex items-center gap-1">
+              <span>
+                <ChevronLeft size={25} className="text-green-500" />
+              </span>
+              {currentProduct.height_from.length === 0 ? (
+                <>
+                  {params.locale === "en"
+                    ? `Varies by model`
+                    : "يختلف حسب النموذج"}
+                </>
+              ) : (
+                <>
+                  {params.locale === "en"
+                    ? `${currentProduct.height_from} to ${currentProduct.height_to} meters`
+                    : `يتراوح من ${currentProduct.height_from} إلى ${currentProduct.height_to} أمتار`}
+                </>
+              )}
+            </p>
+          </div>
+        )}
 
         {currentProduct.width_from.length > 0 && (
           <div>
