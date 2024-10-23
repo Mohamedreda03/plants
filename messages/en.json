@@ -7,10 +7,10 @@
     "contact": "Contact us"
   },
   "Hero": {
-    "title1": "Your way to green paradise",
-    "title2": "All around you",
-    "subtitle1": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    "subtitle2": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+    "title": "Welcome to Flower Green",
+
+    "subtitle1": "Your way to green paradise",
+    "subtitle2": "All around you",
     "button1": "See our products",
     "button2": "Branches"
   },
