@@ -17,7 +17,7 @@ export default function HeroSwiper() {
     <Swiper
       modules={[Navigation, Autoplay]}
       slidesPerView={1}
-      autoplay={{ delay: 5000 }}
+      autoplay={{ delay: 3000 }}
       navigation
       className="w-full h-[calc(100vh-89px)]"
     >
