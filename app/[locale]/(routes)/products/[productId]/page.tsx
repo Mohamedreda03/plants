@@ -1,7 +1,7 @@
 import ProductImages from "@/components/ProductImages";
 import data from "@/lib/data_products.json";
 import { cn } from "@/lib/utils";
-import { ChevronLeft, Sprout } from "lucide-react";
+import { ChevronLeft, ChevronRight, Sprout } from "lucide-react";
 import { useTranslations } from "next-intl";
 
 export default function ProductPage({
@@ -45,7 +45,7 @@ export default function ProductPage({
     <>
       <div
         className={cn(
-          "flex px-5 py-10 max-w-screen-xl mx-auto flex-col-reverse md:flex-row",
+          "flex px-5 py-10 max-w-screen-xl mx-auto flex-col-reverse md:flex-row gap-14",
           {
             "md:flex-row-reverse": params.locale === "en",
           }
@@ -69,7 +69,11 @@ export default function ProductPage({
               </h4>
               <p className="flex items-center gap-1">
                 <span>
-                  <ChevronLeft size={25} className="text-green-500" />
+                  {params.locale === "en" ? (
+                    <ChevronRight size={30} className="text-green-500" />
+                  ) : (
+                    <ChevronLeft size={25} className="text-green-500" />
+                  )}
                 </span>
                 {currentProduct.la_name}
               </p>
@@ -83,7 +87,11 @@ export default function ProductPage({
               </h4>
               <p className="flex items-center gap-1">
                 <span>
-                  <ChevronLeft size={25} className="text-green-500" />
+                  {params.locale === "en" ? (
+                    <ChevronRight size={30} className="text-green-500" />
+                  ) : (
+                    <ChevronLeft size={25} className="text-green-500" />
+                  )}
                 </span>
                 {currentProduct.height_from.length === 0 ? (
                   <>
@@ -109,7 +117,11 @@ export default function ProductPage({
               </h4>
               <p className="flex items-center gap-1">
                 <span>
-                  <ChevronLeft size={25} className="text-green-500" />
+                  {params.locale === "en" ? (
+                    <ChevronRight size={30} className="text-green-500" />
+                  ) : (
+                    <ChevronLeft size={25} className="text-green-500" />
+                  )}
                 </span>
                 {currentProduct.width_from.length === 0 ? (
                   <>
@@ -135,7 +147,11 @@ export default function ProductPage({
               </h4>
               <p className="flex items-center gap-1">
                 <span>
-                  <ChevronLeft size={25} className="text-green-500" />
+                  {params.locale === "en" ? (
+                    <ChevronRight size={30} className="text-green-500" />
+                  ) : (
+                    <ChevronLeft size={25} className="text-green-500" />
+                  )}
                 </span>
                 {params.locale === "en"
                   ? currentProduct.en_suitable_environment
