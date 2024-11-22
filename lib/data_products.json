@@ -12,9 +12,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Shrubs",
     "images": [
-      "/products/bauhinia/1.jpeg",
-      "/products/bauhinia/2.jpeg",
-      "/products/bauhinia/3.jpeg"
+      "/products/bauhinia/1.webp",
+      "/products/bauhinia/2.webp",
+      "/products/bauhinia/3.webp"
     ]
   },
   {
@@ -30,9 +30,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Trees",
     "images": [
-      "/products/royal_poinciana/1.jpeg",
-      "/products/royal_poinciana/2.jpeg",
-      "/products/royal_poinciana/3.jpeg"
+      "/products/royal_poinciana/1.webp",
+      "/products/royal_poinciana/2.webp",
+      "/products/royal_poinciana/3.webp"
     ]
   },
   {
@@ -47,7 +47,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوعين",
     "en_suitable_environment": "well-drained soil, warm climate, watering every two weeks",
     "category": "Indoor Plants",
-    "images": ["/products/pachypodium/1.jpeg", "/products/pachypodium/2.jpeg"]
+    "images": ["/products/pachypodium/1.webp", "/products/pachypodium/2.webp"]
   },
   {
     "id": "4",
@@ -62,9 +62,9 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/peltophorum_pterocarpum/1.jpeg",
-      "/products/peltophorum_pterocarpum/2.jpeg",
-      "/products/peltophorum_pterocarpum/3.jpeg"
+      "/products/peltophorum_pterocarpum/1.webp",
+      "/products/peltophorum_pterocarpum/2.webp",
+      "/products/peltophorum_pterocarpum/3.webp"
     ]
   },
   {
@@ -80,10 +80,10 @@
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/platycladus_orientalis/1.jpeg",
-      "/products/platycladus_orientalis/2.jpeg",
-      "/products/platycladus_orientalis/3.jpeg",
-      "/products/platycladus_orientalis/4.jpeg"
+      "/products/platycladus_orientalis/1.webp",
+      "/products/platycladus_orientalis/2.webp",
+      "/products/platycladus_orientalis/3.webp",
+      "/products/platycladus_orientalis/4.webp"
     ]
   },
   {
@@ -99,11 +99,11 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/cordia/1.jpeg",
-      "/products/cordia/2.jpeg",
-      "/products/cordia/3.jpeg",
-      "/products/cordia/4.jpeg",
-      "/products/cordia/5.jpeg"
+      "/products/cordia/1.webp",
+      "/products/cordia/2.webp",
+      "/products/cordia/3.webp",
+      "/products/cordia/4.webp",
+      "/products/cordia/5.webp"
     ]
   },
   {
@@ -119,10 +119,10 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/cassia_nodosa/1.jpeg",
-      "/products/cassia_nodosa/2.jpeg",
-      "/products/cassia_nodosa/3.jpeg",
-      "/products/cassia_nodosa/4.jpeg"
+      "/products/cassia_nodosa/1.webp",
+      "/products/cassia_nodosa/2.webp",
+      "/products/cassia_nodosa/3.webp",
+      "/products/cassia_nodosa/4.webp"
     ]
   },
   {
@@ -137,7 +137,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوعين",
     "en_suitable_environment": "well-drained soil, warm climate, watering every two weeks",
     "category": "Indoor Plants",
-    "images": ["/products/baobab/1.jpeg"]
+    "images": ["/products/baobab/1.webp"]
   },
   {
     "id": "9",
@@ -152,8 +152,8 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/bougainvillea_glabra/1.jpeg",
-      "/products/bougainvillea_glabra/2.jpeg"
+      "/products/bougainvillea_glabra/1.webp",
+      "/products/bougainvillea_glabra/2.webp"
     ]
   },
   {
@@ -169,10 +169,10 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/dragon_tree/1.jpeg",
-      "/products/dragon_tree/2.jpeg",
-      "/products/dragon_tree/3.jpeg",
-      "/products/dragon_tree/4.jpeg"
+      "/products/dragon_tree/1.webp",
+      "/products/dragon_tree/2.webp",
+      "/products/dragon_tree/3.webp",
+      "/products/dragon_tree/4.webp"
     ]
   },
   {
@@ -188,9 +188,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/sterculia/1.jpeg",
-      "/products/sterculia/2.jpeg",
-      "/products/sterculia/3.jpeg"
+      "/products/sterculia/1.webp",
+      "/products/sterculia/2.webp",
+      "/products/sterculia/3.webp"
     ]
   },
   {
@@ -206,9 +206,9 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/mango/1.jpeg",
-      "/products/mango/2.jpeg",
-      "/products/mango/3.jpeg"
+      "/products/mango/1.webp",
+      "/products/mango/2.webp",
+      "/products/mango/3.webp"
     ]
   },
   {
@@ -223,7 +223,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوعين",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered every two weeks",
     "category": "Indoor Plants",
-    "images": ["/products/olive/1.jpeg"]
+    "images": ["/products/olive/1.webp"]
   },
   {
     "id": "14",
@@ -237,7 +237,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/columnar_cypress/1.jpeg"]
+    "images": ["/products/columnar_cypress/1.webp"]
   },
   {
     "id": "15",
@@ -251,7 +251,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/lemon_cypress/1.jpeg"]
+    "images": ["/products/lemon_cypress/1.webp"]
   },
   {
     "id": "16",
@@ -265,7 +265,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/cordyline/1.jpeg"]
+    "images": ["/products/cordyline/1.webp"]
   },
   {
     "id": "17",
@@ -280,10 +280,10 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/terminalia_mentalis/1.jpeg",
-      "/products/terminalia_mentalis/2.jpeg",
-      "/products/terminalia_mentalis/3.jpeg",
-      "/products/terminalia_mentalis/4.jpeg"
+      "/products/terminalia_mentalis/1.webp",
+      "/products/terminalia_mentalis/2.webp",
+      "/products/terminalia_mentalis/3.webp",
+      "/products/terminalia_mentalis/4.webp"
     ]
   },
   {
@@ -299,9 +299,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/triangle_palm/1.jpeg",
-      "/products/triangle_palm/2.jpeg",
-      "/products/triangle_palm/3.jpeg"
+      "/products/triangle_palm/1.webp",
+      "/products/triangle_palm/2.webp",
+      "/products/triangle_palm/3.webp"
     ]
   },
   {
@@ -317,9 +317,9 @@
     "en_suitable_environment": "well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/foxtail_palm/1.jpeg",
-      "/products/foxtail_palm/2.jpeg",
-      "/products/foxtail_palm/3.jpeg"
+      "/products/foxtail_palm/1.webp",
+      "/products/foxtail_palm/2.webp",
+      "/products/foxtail_palm/3.webp"
     ]
   },
   {
@@ -335,9 +335,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/cox's_palm/1.jpeg",
-      "/products/cox's_palm/2.jpeg",
-      "/products/cox's_palm/3.jpeg"
+      "/products/cox's_palm/1.webp",
+      "/products/cox's_palm/2.webp",
+      "/products/cox's_palm/3.webp"
     ]
   },
   {
@@ -352,7 +352,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/washingtonia_palm/1.jpeg"]
+    "images": ["/products/washingtonia_palm/1.webp"]
   },
   {
     "id": "22",
@@ -366,7 +366,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/bleached_palm/1.jpeg"]
+    "images": ["/products/bleached_palm/1.webp"]
   },
   {
     "id": "23",
@@ -380,7 +380,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/robellini_palm/1.jpeg"]
+    "images": ["/products/robellini_palm/1.webp"]
   },
   {
     "id": "24",
@@ -394,7 +394,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/raphis_palm/1.jpeg", "/products/raphis_palm/2.jpeg"]
+    "images": ["/products/raphis_palm/1.webp", "/products/raphis_palm/2.webp"]
   },
   {
     "id": "25",
@@ -408,7 +408,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/pineapple/1.jpeg"]
+    "images": ["/products/pineapple/1.webp"]
   },
   {
     "id": "26",
@@ -422,7 +422,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/bird_of_paradise/1.jpeg"]
+    "images": ["/products/bird_of_paradise/1.webp"]
   },
   {
     "id": "27",
@@ -437,8 +437,8 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/dwarf_crepe_myrtle/1.jpeg",
-      "/products/dwarf_crepe_myrtle/2.jpeg"
+      "/products/dwarf_crepe_myrtle/1.webp",
+      "/products/dwarf_crepe_myrtle/2.webp"
     ]
   },
   {
@@ -454,9 +454,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/agasta/1.jpeg",
-      "/products/agasta/2.jpeg",
-      "/products/agasta/3.jpeg"
+      "/products/agasta/1.webp",
+      "/products/agasta/2.webp",
+      "/products/agasta/3.webp"
     ]
   },
   {
@@ -471,7 +471,7 @@
     "ar_suitable_environment": "تربة رملية، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Sandy soil, warm climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/glasswort/1.jpeg", "/products/glasswort/2.jpeg"]
+    "images": ["/products/glasswort/1.webp", "/products/glasswort/2.webp"]
   },
   {
     "id": "30",
@@ -486,9 +486,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/spanish_bayonet/1.jpeg",
-      "/products/spanish_bayonet/2.jpeg",
-      "/products/spanish_bayonet/3.jpeg"
+      "/products/spanish_bayonet/1.webp",
+      "/products/spanish_bayonet/2.webp",
+      "/products/spanish_bayonet/3.webp"
     ]
   },
   {
@@ -504,9 +504,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/pandanus/1.jpeg",
-      "/products/pandanus/2.jpeg",
-      "/products/pandanus/3.jpeg"
+      "/products/pandanus/1.webp",
+      "/products/pandanus/2.webp",
+      "/products/pandanus/3.webp"
     ]
   },
   {
@@ -521,7 +521,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/broom_corn/1.jpeg"]
+    "images": ["/products/broom_corn/1.webp"]
   },
   {
     "id": "33",
@@ -535,7 +535,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/dracaena_surculosa/1.jpeg"]
+    "images": ["/products/dracaena_surculosa/1.webp"]
   },
   {
     "id": "34",
@@ -549,7 +549,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/tecoma/1.jpeg"]
+    "images": ["/products/tecoma/1.webp"]
   },
   {
     "id": "35",
@@ -563,7 +563,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/hibiscus/1.jpeg", "/products/hibiscus/2.jpeg"]
+    "images": ["/products/hibiscus/1.webp", "/products/hibiscus/2.webp"]
   },
   {
     "id": "36",
@@ -577,7 +577,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/kumquat/1.jpeg"]
+    "images": ["/products/kumquat/1.webp"]
   },
   {
     "id": "37",
@@ -591,7 +591,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/mulberry/1.jpeg"]
+    "images": ["/products/mulberry/1.webp"]
   },
   {
     "id": "38",
@@ -606,9 +606,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/lantana/1.jpeg",
-      "/products/lantana/2.jpeg",
-      "/products/lantana/3.jpeg"
+      "/products/lantana/1.webp",
+      "/products/lantana/2.webp",
+      "/products/lantana/3.webp"
     ]
   },
   {
@@ -623,7 +623,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/bougainvillea/1.jpeg"]
+    "images": ["/products/bougainvillea/1.webp"]
   },
   {
     "id": "40",
@@ -637,7 +637,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/mandarin_orange/1.jpeg"]
+    "images": ["/products/mandarin_orange/1.webp"]
   },
   {
     "id": "41",
@@ -652,10 +652,10 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/cassia_glauca/1.jpeg",
-      "/products/cassia_glauca/2.jpeg",
-      "/products/cassia_glauca/3.jpeg",
-      "/products/cassia_glauca/4.jpeg"
+      "/products/cassia_glauca/1.webp",
+      "/products/cassia_glauca/2.webp",
+      "/products/cassia_glauca/3.webp",
+      "/products/cassia_glauca/4.webp"
     ]
   },
   {
@@ -670,7 +670,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/grape/1.jpeg"]
+    "images": ["/products/grape/1.webp"]
   },
   {
     "id": "43",
@@ -684,7 +684,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/benjamin_fig/1.jpeg"]
+    "images": ["/products/benjamin_fig/1.webp"]
   },
   {
     "id": "44",
@@ -698,7 +698,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/yellow_areca_palm/1.jpeg"]
+    "images": ["/products/yellow_areca_palm/1.webp"]
   },
   {
     "id": "45",
@@ -712,7 +712,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/red_areca_palm/1.jpeg"]
+    "images": ["/products/red_areca_palm/1.webp"]
   },
   {
     "id": "46",
@@ -727,9 +727,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/royal_palm/1.jpeg",
-      "/products/royal_palm/2.jpeg",
-      "/products/royal_palm/3.jpeg"
+      "/products/royal_palm/1.webp",
+      "/products/royal_palm/2.webp",
+      "/products/royal_palm/3.webp"
     ]
   },
   {
@@ -744,7 +744,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري حسب الحاجة",
     "en_suitable_environment": "Well-drained soil, temperate climate, water as needed",
     "category": "Indoor Plants",
-    "images": ["/products/bonsai/1.jpeg", "/products/bonsai/2.jpeg"]
+    "images": ["/products/bonsai/1.webp", "/products/bonsai/2.webp"]
   },
   {
     "id": "48",
@@ -759,9 +759,9 @@
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/ficus_benjamina/1.jpeg",
-      "/products/ficus_benjamina/2.jpeg",
-      "/products/ficus_benjamina/3.jpeg"
+      "/products/ficus_benjamina/1.webp",
+      "/products/ficus_benjamina/2.webp",
+      "/products/ficus_benjamina/3.webp"
     ]
   },
   {
@@ -776,7 +776,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/lemon/1.jpeg", "/products/lemon/2.jpeg"]
+    "images": ["/products/lemon/1.webp", "/products/lemon/2.webp"]
   },
   {
     "id": "50",
@@ -790,7 +790,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/ravenala/1.jpeg"]
+    "images": ["/products/ravenala/1.webp"]
   },
   {
     "id": "51",
@@ -804,7 +804,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ معتدل، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, temperate climate, watered weekly",
     "category": "Indoor Plants",
-    "images": ["/products/magnolia/1.jpeg"]
+    "images": ["/products/magnolia/1.webp"]
   },
   {
     "id": "52",
@@ -818,7 +818,7 @@
     "ar_suitable_environment": "تربة جيدة التصريف، مناخ دافئ، يتم الري كل أسبوع",
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
-    "images": ["/products/ficus_neriifolia/1.jpeg"]
+    "images": ["/products/ficus_neriifolia/1.webp"]
   },
   {
     "id": "53",
@@ -833,9 +833,9 @@
     "en_suitable_environment": "Well-drained soil, warm climate, watering weekly",
     "category": "Indoor Plants",
     "images": [
-      "/products/yucca/1.jpeg",
-      "/products/yucca/2.jpeg",
-      "/products/yucca/3.jpeg"
+      "/products/yucca/1.webp",
+      "/products/yucca/2.webp",
+      "/products/yucca/3.webp"
     ]
   },
   {
@@ -851,9 +851,9 @@
     "en_suitable_environment": "Light sandy soil with good aeration and drainage, dry and hot climate, watered every two to three weeks",
     "category": "Indoor Plants",
     "images": [
-      "/products/cacti/1.jpeg",
-      "/products/cacti/2.jpeg",
-      "/products/cacti/3.jpeg"
+      "/products/cacti/1.webp",
+      "/products/cacti/2.webp",
+      "/products/cacti/3.webp"
     ]
   },
   {
@@ -866,27 +866,27 @@
     "width_from": "",
     "width_to": "",
     "images": [
-      "/products/multiple_types/1.jpeg",
-      "/products/multiple_types/2.jpeg",
-      "/products/multiple_types/3.jpeg",
-      "/products/multiple_types/4.jpeg",
-      "/products/multiple_types/5.jpeg",
-      "/products/multiple_types/6.jpeg",
-      "/products/multiple_types/7.jpeg",
-      "/products/multiple_types/8.jpeg",
-      "/products/multiple_types/9.jpeg",
+      "/products/multiple_types/1.webp",
+      "/products/multiple_types/2.webp",
+      "/products/multiple_types/3.webp",
+      "/products/multiple_types/4.webp",
+      "/products/multiple_types/5.webp",
+      "/products/multiple_types/6.webp",
+      "/products/multiple_types/7.webp",
+      "/products/multiple_types/8.webp",
+      "/products/multiple_types/9.webp",
       "/products/multiple_types/10.webp",
-      "/products/multiple_types/11.jpeg",
-      "/products/multiple_types/12.jpeg",
-      "/products/multiple_types/13.jpeg",
-      "/products/multiple_types/14.jpeg",
-      "/products/multiple_types/15.jpeg",
-      "/products/multiple_types/16.jpeg",
-      "/products/multiple_types/17.jpeg",
-      "/products/multiple_types/18.jpeg",
-      "/products/multiple_types/19.jpeg",
-      "/products/multiple_types/20.jpeg",
-      "/products/multiple_types/21.jpeg"
+      "/products/multiple_types/11.webp",
+      "/products/multiple_types/12.webp",
+      "/products/multiple_types/13.webp",
+      "/products/multiple_types/14.webp",
+      "/products/multiple_types/15.webp",
+      "/products/multiple_types/16.webp",
+      "/products/multiple_types/17.webp",
+      "/products/multiple_types/18.webp",
+      "/products/multiple_types/19.webp",
+      "/products/multiple_types/20.webp",
+      "/products/multiple_types/21.webp"
     ]
   }
 ]
