@@ -11,7 +11,7 @@ export default function ProductsPage({
 }) {
   return (
     <div className="max-w-screen-xl mx-auto px-5">
-      <FilteredProducts locale={locale} products={data as PRODUCTS_TYPE[]} />
+      <FilteredProducts locale={locale} />
     </div>
   );
 }
