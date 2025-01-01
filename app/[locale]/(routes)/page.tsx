@@ -17,11 +17,7 @@ export default function HomePage({
     <div>
       <HeroSwiper />
       <About />
-      <ProductsGroup
-        title={t("title_1")}
-        products={data as PRODUCTS_TYPE[]}
-        locale={params.locale}
-      />
+      <ProductsGroup title={t("title_1")} locale={params.locale} />
       <Branches />
     </div>
   );

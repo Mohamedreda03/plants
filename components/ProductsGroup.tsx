@@ -12,17 +12,33 @@ import "swiper/css/navigation";
 
 import ProductCard from "./ProductCard";
 import { Navigation } from "swiper/modules";
+import { getProducts } from "@/lib/products";
+import { useQuery } from "@tanstack/react-query";
+import Loading from "./Loading";
 
 export default function ProductsGroup({
   title,
-  products,
   locale,
 }: {
   title: string;
-  products: PRODUCTS_TYPE[];
   locale: "en" | "ar";
 }) {
   const t = useTranslations("ProductsGroup");
+
+  const { data, isLoading } = useQuery({
+    queryKey: ["products"],
+    queryFn: async () => {
+      const res = await getProducts(1);
+
+      return res.data.data;
+    },
+  });
+
+  // console.log(data);
+
+  if (isLoading) {
+    return <Loading className="h-[70vh]" />;
+  }
 
   return (
     <div className="flex flex-col gap-3 py-10 max-w-screen-xl mx-auto px-5">
@@ -50,7 +66,7 @@ export default function ProductsGroup({
             },
           }}
         >
-          {products.map((product: PRODUCTS_TYPE) => (
+          {data.map((product: PRODUCTS_TYPE) => (
             <SwiperSlide key={product.id}>
               <ProductCard product={product} locale={locale} />
             </SwiperSlide>

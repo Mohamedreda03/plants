@@ -1,8 +1,12 @@
+"use client"
+
 import { useTranslations } from "next-intl";
 import Image from "next/image";
 import LangButton from "./LangButton";
 import MobileMenu from "./MobileMenu";
 import { Link } from "@/i18n/routing";
+import LogoutButton from "@/components/LogoutButton";
+
 
 export default function Navbar() {
   const t = useTranslations("Navbar");
@@ -13,7 +17,7 @@ export default function Navbar() {
         <Link href="/">
           <Image src="/logo.png" alt="Logo" width={100} height={70} />
         </Link>
-        <ul className="hidden md:flex items-center gap-7 text-xl">
+        <ul className="hidden lg:flex items-center gap-7 text-xl">
           <li>
             <Link href="/" className="hover:text-green-400 transition-all">
               {t("home")}
@@ -51,9 +55,11 @@ export default function Navbar() {
               {t("contact")}
             </Link>
           </li>
+
         </ul>
-        <div className="hidden md:block">
+        <div className="hidden lg:flex items-center gap-3">
           <LangButton />
+          <LogoutButton />
         </div>
         <MobileMenu />
       </div>

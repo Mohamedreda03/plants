@@ -1,4 +1,3 @@
-import { Link } from "@/i18n/routing";
 import Image from "next/image";
 
 export default function Footer() {
@@ -71,12 +70,12 @@ export default function Footer() {
                     y2="-2.46459e-06"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FBE18A"></stop>
-                    <stop offset="0.21" stop-color="#FCBB45"></stop>
-                    <stop offset="0.38" stop-color="#F75274"></stop>
-                    <stop offset="0.52" stop-color="#D53692"></stop>
-                    <stop offset="0.74" stop-color="#8F39CE"></stop>
-                    <stop offset="1" stop-color="#5B4FE9"></stop>
+                    <stop stopColor="#FBE18A"></stop>
+                    <stop offset="0.21" stopColor="#FCBB45"></stop>
+                    <stop offset="0.38" stopColor="#F75274"></stop>
+                    <stop offset="0.52" stopColor="#D53692"></stop>
+                    <stop offset="0.74" stopColor="#8F39CE"></stop>
+                    <stop offset="1" stopColor="#5B4FE9"></stop>
                   </linearGradient>
                 </defs>
               </svg>
