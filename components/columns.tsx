@@ -5,12 +5,8 @@ import { Product } from "@/types/product";
 import { Button } from "@/components/ui/button";
 import { ArrowUpRight, Pencil, Trash } from "lucide-react";
 import { Link } from "@/i18n/routing";
-import { deleteProduct } from "@/lib/products";
-import DeleteProductModel from "./deleteModel";
 
 const ActionsCell = ({ product }: { product: Product }) => {
-  const queryClient = useQueryClient();
-
   return (
     <div className="flex items-center gap-2 justify-center">
       <Link href={`/products/${product.id}`}>
@@ -23,7 +19,6 @@ const ActionsCell = ({ product }: { product: Product }) => {
           <Pencil className="h-4 w-4" />
         </Button>
       </Link>
-      {/* <DeleteProductModel onDelete={handleDelete} /> */}
     </div>
   );
 };

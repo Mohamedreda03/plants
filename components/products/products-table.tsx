@@ -26,7 +26,6 @@ import {
   TableHeader,
   TableRow,
 } from "../ui/table";
-import DeleteProductModel from "../deleteModel";
 import { Link } from "@/i18n/routing";
 
 export function ProductsTable() {
@@ -128,9 +127,6 @@ export function ProductsTable() {
                         <Pencil className="h-4 w-4" />
                       </Button>
                     </Link>
-                    <DeleteProductModel
-                      onDelete={() => handleDelete(product.id)}
-                    />
                   </div>
                 </TableCell>
               </TableRow>
