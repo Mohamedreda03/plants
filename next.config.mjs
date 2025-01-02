@@ -7,6 +7,16 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "flower-green.com",
+        port: "",
+        pathname: "/images/**",
+      },
+    ],
+  },
 };
 
 export default withNextIntl(nextConfig);
