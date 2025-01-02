@@ -23,6 +23,7 @@ export default function EditProductPage({ params }: EditProductPageProps) {
   const handleSubmit = async (data: ProductFormData) => {
     await updateProduct(data);
     router.push("/admin/products");
+    router.refresh();
   };
 
   if (isProductLoading) {
