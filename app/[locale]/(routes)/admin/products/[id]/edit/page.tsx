@@ -29,6 +29,8 @@ export default function EditProductPage({ params }: EditProductPageProps) {
     return <Loading className="h-[70vh]" />;
   }
 
+  console.log(product);
+
   product.images = product.images.map((image: any) => ({
     url: typeof image === "string" ? image : image.url,
     file: null,
