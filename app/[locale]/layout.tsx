@@ -19,6 +19,20 @@ export const metadata: Metadata = {
   keywords:
     "flowers, plants, Flower Green, gardening, floral arrangements, زهور, نباتات, فلاور جرين, بستنة, تنسيق زهور",
   authors: [{ name: "Flower Green" }],
+  openGraph: {
+    type: "website",
+    locale: "ar",
+    url: "https://flower-green.com/",
+    siteName: "Flower Green",
+    images: [
+      {
+        url: "/logo_seo.png",
+        width: 1200,
+        height: 630,
+        alt: "Flower Green",
+      },
+    ],
+  },
 };
 
 export default async function LocaleLayout({
