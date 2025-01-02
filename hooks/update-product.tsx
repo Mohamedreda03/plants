@@ -51,7 +51,7 @@ export function useUpdateProduct(product: any, id: string) {
       await axios.patch(`/api/products/${id}`, data);
     },
     onSuccess: () => {
-      queryClient.invalidateQueries({ queryKey: "products" });
+      queryClient.invalidateQueries({ queryKey: "product" });
     },
   });
 
