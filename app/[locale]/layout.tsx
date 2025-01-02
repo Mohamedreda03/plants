@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     siteName: "Flower Green",
     images: [
       {
-        url: "/logo_seo.png",
+        url: "https://flower-green.com/images/logo_seo.png",
         width: 1200,
         height: 630,
         alt: "Flower Green",
