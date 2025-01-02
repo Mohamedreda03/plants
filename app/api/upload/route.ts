@@ -39,6 +39,8 @@ export const DELETE = async (req: NextRequest) => {
 
     let path = join(process.cwd(), "..", "uploads", "images", fileName);
 
+    console.log(path);
+
     if (existsSync(path)) {
       await unlink(path);
     }
