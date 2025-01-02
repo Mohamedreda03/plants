@@ -1,5 +1,5 @@
 import { existsSync } from "fs";
-import { unlink, writeFile } from "fs/promises";
+import { writeFile, unlink } from "fs/promises";
 import { NextRequest, NextResponse } from "next/server";
 import { join } from "path";
 import { v4 as uuid } from "uuid";
@@ -19,14 +19,14 @@ export const POST = async (req: NextRequest) => {
 
   const fileName = `${uuid().replace(/-/g, "")}.${file.name.split(".").pop()}`;
 
-  let path = join("public", "images", fileName);
-  await writeFile(path, new Uint8Array(buffer));
+  let path = join(process.cwd(), "..", "uploads", "images", fileName);
+  await writeFile(path, buffer);
 
-  // const imageLink = `${process.env.NEXT_PUBLIC_APP_URL}/images/${fileName}`;
+  const imageLink = `${process.env.NEXT_PUBLIC_APP_URL}/images/${fileName}`;
 
-  path = path.replace("public", "").split("\\").join("/");
+  // path = path.replace("public", "").split("\\").join("/");
 
-  return NextResponse.json({ success: true, path });
+  return NextResponse.json({ success: true, path: imageLink });
 };
 
 // delete file by path
@@ -37,7 +37,7 @@ export const DELETE = async (req: NextRequest) => {
 
     const fileName = body.path.split("/").pop() as string;
 
-    let path = join("public", "images", fileName);
+    let path = join(process.cwd(), "..", "uploads", "images", fileName);
 
     if (existsSync(path)) {
       await unlink(path);
@@ -45,6 +45,6 @@ export const DELETE = async (req: NextRequest) => {
 
     return NextResponse.json({ success: true });
   } catch (error) {
-    return new NextResponse("Internal Server Error", { status: 500 });
+    return NextResponse.json({ success: false }, { status: 400 });
   }
 };

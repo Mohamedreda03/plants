@@ -15,24 +15,10 @@ const almarai = Almarai({
 export const metadata: Metadata = {
   title: "Flower Green",
   description:
-    "Flower Green Agricultural Company, launched from Menoufia Governorate, aims to achieve global status by providing integrated agricultural services. Our diverse plant production and commitment to showcasing nature's beauty are our core principles. We offer high-quality services with a team of qualified, expert, and professional workers dedicated to excellence, credibility, and accuracy. Discover our branches and experience the best in agricultural services.",
+    "Flower Green تقدم خدمات زراعية متكاملة بجودة عالية، تجمع بين تنوع الإنتاج والاحترافية لإبراز جمال الطبيعة.",
   keywords:
     "flowers, plants, Flower Green, gardening, floral arrangements, زهور, نباتات, فلاور جرين, بستنة, تنسيق زهور",
   authors: [{ name: "Flower Green" }],
-  openGraph: {
-    title: "Flower Green",
-    description:
-      "Welcome to Flower Green, your go-to destination for beautiful flowers and plants.",
-    images: [
-      {
-        url: "/logo_seo.png",
-        width: 1200,
-        height: 630,
-        alt: "Flower Green",
-      },
-    ],
-    url: "https://www.flower-green.com",
-  },
 };
 
 export default async function LocaleLayout({
