@@ -18,6 +18,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ImageUpload } from "@/components/ui/image-upload";
 import { Product, ProductFormData } from "@/types/product";
+import { Loader } from "lucide-react";
 
 const formSchema = z.object({
   ar_name: z.string().min(1),
@@ -30,12 +31,14 @@ const formSchema = z.object({
   ar_suitable_environment: z.string().min(1),
   en_suitable_environment: z.string().min(1),
 
-  images: z.array(
-    z.object({
-      url: z.string().nullish(),
-      file: z.instanceof(File).nullish(),
-    })
-  ).min(0),
+  images: z
+    .array(
+      z.object({
+        url: z.string().nullish(),
+        file: z.instanceof(File).nullish(),
+      })
+    )
+    .min(0),
 });
 
 interface ProductFormProps {
@@ -65,10 +68,8 @@ export function ProductForm({ initialData, onSubmit }: ProductFormProps) {
 
   const handleSubmit = async (data: ProductFormData) => {
     try {
-      console.log(data);
       setIsLoading(true);
       await onSubmit(data);
-      // router.push("/products");
     } catch (error) {
       console.error(error);
     } finally {
@@ -225,21 +226,15 @@ export function ProductForm({ initialData, onSubmit }: ProductFormProps) {
             </FormItem>
           )}
         />
-        {/* <FormField
-          control={form.control}
-          name="category"
-          render={({ field }) => (
-            <FormItem>
-              <FormLabel>Category</FormLabel>
-              <FormControl>
-                <Input {...field} />
-              </FormControl>
-              <FormMessage />
-            </FormItem>
-          )}
-        /> */}
-        <Button type="submit" disabled={isLoading}>
-          {isLoading ? "Saving..." : "Save Product"}
+
+        <Button
+          variant="secondary"
+          className="bg-green-400 hover:bg-green-500 disabled:bg-green-400/25"
+          type="submit"
+          disabled={isLoading}
+        >
+          {isLoading ? "Saving" : "Update Product"}
+          {isLoading && <Loader className="ml-2 animate-spin" size={16} />}
         </Button>
       </form>
     </Form>

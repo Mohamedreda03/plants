@@ -14,10 +14,10 @@ import {
   FormMessage,
 } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
-import { Lock } from "lucide-react";
+import { Loader, Lock } from "lucide-react";
 import { auth } from "@/actions/auth";
 import { useRouter } from "@/i18n/routing";
-import {useAuth} from "@/hooks/useAuth";
+import { useAuth } from "@/hooks/useAuth";
 
 const formSchema = z.object({
   password: z.string().min(1, "Password is required"),
@@ -29,7 +29,7 @@ export function AuthForm() {
   const router = useRouter();
   const [error, setError] = useState<string>("");
   const [isLoading, setIsLoading] = useState(false);
-  const {refresh,logIn} = useAuth();
+  const { logIn } = useAuth();
 
   const form = useForm<FormData>({
     resolver: zodResolver(formSchema),
@@ -52,7 +52,6 @@ export function AuthForm() {
       }
     } catch (error) {
       setError("An error occurred. Please try again.");
-    } finally {
       setIsLoading(false);
     }
   };
@@ -60,7 +59,7 @@ export function AuthForm() {
   return (
     <div className="mx-auto max-w-sm space-y-8">
       <div className="space-y-2 text-center">
-        <Lock className="mx-auto h-12 w-12" />
+        <Lock className="mx-auto h-12 w-12 text-green-500" />
         <h1 className="text-2xl font-bold">Admin Access</h1>
         <p className="text-muted-foreground">
           Enter your password to access the admin panel
@@ -83,10 +82,20 @@ export function AuthForm() {
             )}
           />
 
-          {error && <p className="text-sm text-destructive">{error}</p>}
+          {error && (
+            <p className="text-sm text-destructive border border-red-500 px-4 py-2 rounded-md text-center bg-red-100">
+              {error}
+            </p>
+          )}
 
-          <Button type="submit" className="w-full" disabled={isLoading}>
-            {isLoading ? "Authenticating..." : "Login"}
+          <Button
+            type="submit"
+            variant="secondary"
+            className="w-full flex items-center bg-green-400 hover:bg-green-500"
+            disabled={isLoading}
+          >
+            {isLoading && <Loader size={13} className="animate-spin" />}
+            <span>Login</span>
           </Button>
         </form>
       </Form>

@@ -32,6 +32,7 @@ export const useAuth = () => {
   const logIn = async (password: string) => {
     try {
       const res = await axios.post("/api/user", { password });
+
       if (!res.data.isAuth) {
         return false;
       }

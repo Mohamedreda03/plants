@@ -34,8 +34,6 @@ export default function ProductsGroup({
     },
   });
 
-  // console.log(data);
-
   if (isLoading) {
     return <Loading className="h-[70vh]" />;
   }

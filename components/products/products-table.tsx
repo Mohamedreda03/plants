@@ -13,8 +13,12 @@ import {
   ArrowLeft,
   ArrowRight,
   ArrowUpRight,
+  ExternalLink,
+  Loader,
+  Loader2,
   Pencil,
   Search,
+  Trash2,
 } from "lucide-react";
 import { Input } from "../ui/input";
 import Loading from "../Loading";
@@ -27,6 +31,8 @@ import {
   TableRow,
 } from "../ui/table";
 import { Link } from "@/i18n/routing";
+import Image from "next/image";
+import DeleteProductModel from "../DeleteModel";
 
 export function ProductsTable() {
   const queryClient = useQueryClient();
@@ -34,6 +40,7 @@ export function ProductsTable() {
   const [searchTotalPages, setSearchTotalPages] = useState(1);
   const [search, setSearch] = useState<string>("");
   const [searchBtn, setSearchBtn] = useState<string>("");
+  const [isLoadingDelete, setIsLoadingDelete] = useState(false);
 
   const router = useRouter();
 
@@ -60,7 +67,9 @@ export function ProductsTable() {
   });
 
   const handleDelete = async (id: string) => {
+    setIsLoadingDelete(true);
     await mutateAsync(id);
+    setIsLoadingDelete(false);
   };
 
   const searchHandler = (e: React.FormEvent<HTMLFormElement>) => {
@@ -75,8 +84,11 @@ export function ProductsTable() {
           onSubmit={searchHandler}
           className={cn("flex items-center gap-3")}
         >
-          <Button>
-            <Search size={15} className="mr-2" />
+          <Button
+            variant="secondary"
+            className="bg-green-400 hover:bg-green-500 text-lg"
+          >
+            <Search size={10} />
             search
           </Button>
           <Input
@@ -89,51 +101,68 @@ export function ProductsTable() {
         </form>
       </div>
 
-      {isLoading ? (
-        <Loading className="h-[300px]" />
-      ) : (
-        <Table dir="rtl" className="mb-8 border">
-          <TableHeader>
+      <Table dir="rtl" className="mb-8 border">
+        <TableHeader>
+          <TableRow>
+            <TableHead className="text-center">image</TableHead>
+            <TableHead className="text-center">arabic name</TableHead>
+            <TableHead className="text-center">english name</TableHead>
+            <TableHead className="text-center"></TableHead>
+          </TableRow>
+        </TableHeader>
+        {data?.length === 0 && (
+          <TableRow>
+            <TableCell colSpan={5} className="text-center text-lg py-5">
+              لا يوجد بيانات
+            </TableCell>
+          </TableRow>
+        )}
+        <TableBody>
+          {isLoading && (
             <TableRow>
-              <TableHead className="text-center">Arabic Name</TableHead>
-              <TableHead className="text-center">English Name</TableHead>
-              <TableHead className="text-center"></TableHead>
-            </TableRow>
-          </TableHeader>
-          {data?.length === 0 && (
-            <TableRow>
-              <TableCell colSpan={5} className="text-center text-lg">
-                لا يوجد بيانات
+              <TableCell colSpan={5} className="text-center py-8">
+                <Loader className="h-8 w-8 animate-spin mx-auto text-green-400" />
               </TableCell>
             </TableRow>
           )}
-          <TableBody>
-            {data?.map((product: any) => (
-              <TableRow key={product.id}>
-                <TableCell className="font-medium text-center">
-                  {product.ar_name}
-                </TableCell>
-                <TableCell className="text-center">{product.en_name}</TableCell>
+          {data?.map((product: any) => (
+            <TableRow key={product.id}>
+              <TableCell className="flex items-center justify-center">
+                <Image
+                  src={product.images[0]}
+                  width={50}
+                  height={50}
+                  alt="image"
+                />
+              </TableCell>
+              <TableCell className="font-medium text-center">
+                {product.ar_name}
+              </TableCell>
+              <TableCell className="text-center">{product.en_name}</TableCell>
 
-                <TableCell className="text-center">
-                  <div className="flex items-center gap-2 justify-center">
-                    <Link href={`/products/${product.id}`}>
-                      <Button variant="ghost" size="icon">
-                        <ArrowUpRight className="h-4 w-4" />
-                      </Button>
-                    </Link>
-                    <Link href={`/admin/products/${product.id}/edit`}>
-                      <Button variant="ghost" size="icon">
-                        <Pencil className="h-4 w-4" />
-                      </Button>
-                    </Link>
-                  </div>
-                </TableCell>
-              </TableRow>
-            ))}
-          </TableBody>
-        </Table>
-      )}
+              <TableCell className="text-center">
+                <div className="flex items-center gap-2 justify-center">
+                  <Link href={`/products/${product.id}`}>
+                    <Button variant="ghost" size="icon">
+                      <ExternalLink className="h-5 w-5" />
+                    </Button>
+                  </Link>
+                  <Link href={`/admin/products/${product.id}/edit`}>
+                    <Button variant="ghost" size="icon">
+                      <Pencil className="h-5 w-5 text-blue-600" />
+                    </Button>
+                  </Link>
+
+                  <DeleteProductModel
+                    onDelete={() => handleDelete(product.id)}
+                    isLoading={isLoadingDelete}
+                  />
+                </div>
+              </TableCell>
+            </TableRow>
+          ))}
+        </TableBody>
+      </Table>
 
       {searchTotalPages > 1 && (
         <div className="mt-3 mb-4">

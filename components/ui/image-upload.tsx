@@ -27,7 +27,6 @@ export function ImageUpload({
         url: URL.createObjectURL(file),
         file,
       }));
-      // console.log(acceptedFiles);
 
       onChange([...value, ...files]);
     },

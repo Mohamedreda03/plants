@@ -61,7 +61,7 @@ export async function DELETE(
     for (const image of product.images) {
       const fileName = image.split("/").pop() as string;
 
-      let path = join("public", "images", fileName);
+      let path = join(process.cwd(), "..", "uploads", "images", fileName);
 
       if (existsSync(path)) {
         await unlink(path);

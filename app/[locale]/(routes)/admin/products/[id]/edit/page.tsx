@@ -29,8 +29,6 @@ export default function EditProductPage({ params }: EditProductPageProps) {
     return <Loading className="h-[70vh]" />;
   }
 
-  console.log(product);
-
   product.images = product.images.map((image: any) => ({
     url: typeof image === "string" ? image : image.url,
     file: null,
@@ -39,7 +37,11 @@ export default function EditProductPage({ params }: EditProductPageProps) {
   return (
     <div className="container mx-auto max-w-screen-md py-10 px-5 md:px-10 flex flex-col">
       <div className="flex items-center justify-end mb-8">
-        <Button onClick={() => router.back()} className="mr-4">
+        <Button
+          variant="secondary"
+          onClick={() => router.back()}
+          className="mr-4"
+        >
           <span>Back</span>
           <ArrowRight size={16} />
         </Button>

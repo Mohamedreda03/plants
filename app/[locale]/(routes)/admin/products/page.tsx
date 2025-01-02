@@ -11,8 +11,11 @@ export default function ProductsPage() {
       <div className="flex items-center justify-between mb-8">
         <h1 className="text-3xl font-bold">Products</h1>
         <Link href="/admin/products/new">
-          <Button>
-            <PlusCircle className="mr-2 h-4 w-4" />
+          <Button
+            variant="secondary"
+            className="bg-green-400 hover:bg-green-500 text-lg"
+          >
+            <PlusCircle className="h-4 w-4" />
             Add Product
           </Button>
         </Link>
